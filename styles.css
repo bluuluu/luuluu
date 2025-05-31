@@ -92,11 +92,5 @@
     background-color: #1b5e20;
   }
 
-  /* Tilt animation */
-.tilt {
-    transition: transform 0.1s ease;
-    perspective: 1000px;
-    will-change: transform;
-  }
   
   
