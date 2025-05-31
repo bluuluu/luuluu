@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bryan Luu</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1> Hello</h1>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <a href="index.html">
+      <img src="images/duck.png" alt="Duck Logo" class="icon clickable" />
+    </a>
+    <div class="nav-links">
+      <a href="#">HOME</a>
+      <a href="#">ABOUT</a>
+      <a href="#">PROJECTS</a>
+      <a href="#">BLOG</a>
+      <a href="#">CONTACT</a>
+    </div>
+    <a href="https://www.linkedin.com" target="_blank">
+      <img src="images/linkedin.png" alt="LinkedIn" class="icon clickable" />
+    </a>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <!-- PLACE YOUR BACKGROUND IMAGE IN CSS (styles.css) under .hero -->
+    <div class="hero-content tilt">
+        <h1>BRYAN LUU</h1>
+        <h2>Software Developer | Data Analyst | Graphic Designer</h2>
+        <div class="buttons">
+          <button onclick="seeMyWork()">SEE MY WORK</button>
+          <button onclick="aboutMe()">ABOUT ME</button>
+        </div>
+      </div>
+      
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>

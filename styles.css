@@ -1,0 +1,102 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: "Italiana", serif;
+    height: 100%;
+    background-color: black;
+  }
+  
+  /* NAVBAR */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e7d32;
+    padding: 10px 30px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  
+  /* ICONS */
+  .icon {
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+  }
+  
+  /* HERO SECTION */
+  .hero {
+    background-image: url("images/background.png"); /* INSERT BACKGROUND IMAGE HERE */
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border-radius: 12px;
+  }
+  
+  .hero-content h1 {
+    font-size: 64px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  
+  /* BUTTONS */
+  .buttons button {
+    background-color: #2e7d32;
+    font-family: "Italiana", serif;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: background 0.3s ease;
+  }
+  
+  .buttons button:hover {
+    background-color: #1b5e20;
+  }
+
+  /* Tilt animation */
+.tilt {
+    transition: transform 0.1s ease;
+    perspective: 1000px;
+    will-change: transform;
+  }
+  
+  
