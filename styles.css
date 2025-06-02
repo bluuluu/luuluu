@@ -11,15 +11,17 @@
     background-color: black;
   }
   
-  /* NAVBAR */
-  .navbar {
+/* NAVBAR */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #2e7d32;
-    padding: 10px 30px;
+    padding: 0 30px;
+    height: 65px; /* sets consistent height */
   }
   
+  /* NAV LINKS */
   .nav-links {
     display: flex;
     gap: 40px;
@@ -33,14 +35,18 @@
     font-size: 22px;
     font-weight: 500;
     letter-spacing: 1px;
+    display: flex;
+    align-items: center; /* ensure links and icons align vertically */
   }
   
   /* ICONS */
   .icon {
-    height: 30px;
+    height: 60px; /* increased size */
     width: auto;
     cursor: pointer;
+    display: block;
   }
+  
   
   /* HERO SECTION */
   .hero {
