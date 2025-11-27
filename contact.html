@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Bryan Luu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">
+      <img src="sheeps.png" alt="Duck Logo" class="icon clickable" />
+    </a>
+    <div class="nav-links">
+      <a href="index.html">HOME</a>
+      <a href="#">ABOUT</a>
+      <a href="#">PROJECTS</a>
+      <a href="#">BLOG</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+    <a href="https://www.linkedin.com" target="_blank">
+      <img src="linkedin.png" alt="LinkedIn" class="icon clickable" />
+    </a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content contact">
+      <h1>Contact</h1>
+      <p>Let us build something great together. Share a bit about your project and how to reach you.</p>
+      <div class="contact-grid">
+        <div class="contact-details">
+          <div class="detail">
+            <span class="label">Email</span>
+            <a href="mailto:bluu072@uottawa.ca">bluu072@uottawa.ca</a>
+          </div>
+          <div class="detail">
+            <span class="label">LinkedIn</span>
+            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
+          </div>
+        </div>
+        <form class="contact-form" action="mailto:bluu072@uottawa.ca" method="post" enctype="text/plain">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="How can I help?" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
