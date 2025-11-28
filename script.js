@@ -29,6 +29,24 @@ const experienceData = {
       "Cross-team alignment",
       "Quality reporting"
     ]
+  },
+  ssc: {
+    title: "Junior Business and IT Analyst (Co-op)",
+    company: "Shared Services Canada — Telecommunications",
+    dates: "May 2023 - Dec 2023",
+    logo: "pictures/ssc.jpeg",
+    bullets: [
+      "Delivered interactive dashboards with Power BI, DAX, and Azure, enhancing telecom service planning by 25%.",
+      "Collaborated with stakeholders to define KPIs and automate internal workflows using Power Automate, cutting manual effort by 20%.",
+      "Presented analytical reports to senior management, supporting cost-optimization and service delivery decisions."
+    ],
+    tools: [
+      "Power BI + DAX",
+      "Azure data workflows",
+      "Power Automate",
+      "KPI design",
+      "Executive reporting"
+    ]
   }
 };
 
@@ -79,29 +97,48 @@ function initExperienceCards() {
   const cards = document.querySelectorAll(".experience-card[data-experience]");
   if (!cards.length) return;
 
-  cards.forEach((card) => {
-    card.addEventListener("click", () => {
-      if (card.classList.contains("disabled")) return;
-      cards.forEach((c) => c.classList.remove("active"));
-      card.classList.add("active");
-      renderExperience(card.dataset.experience);
+  const setCardLabel = (card, text) => {
+    const label = card.querySelector(".pill");
+    if (label) label.textContent = text;
+  };
+
+  const handleCardAction = (card) => {
+    if (card.classList.contains("disabled")) return;
+
+    const detail = document.getElementById("experience-detail");
+    const placeholder = document.getElementById("experience-placeholder");
+    const isActive = card.classList.contains("active");
+
+    if (isActive) {
+      cards.forEach((c) => {
+        c.classList.remove("active");
+        setCardLabel(c, "Open");
+      });
+      if (detail) detail.classList.add("collapsed");
+      if (placeholder) placeholder.classList.add("show");
+      return;
+    }
+
+    cards.forEach((c) => {
+      c.classList.remove("active");
+      setCardLabel(c, "Open");
     });
-  });
-}
+    card.classList.add("active");
+    setCardLabel(card, "Hide");
+    renderExperience(card.dataset.experience);
+  };
 
-function initCloseButton() {
-  const closeBtn = document.querySelector(".close-detail");
-  const detail = document.getElementById("experience-detail");
-  const placeholder = document.getElementById("experience-placeholder");
-  if (!closeBtn || !detail) return;
-
-  closeBtn.addEventListener("click", () => {
-    detail.classList.add("collapsed");
-    if (placeholder) placeholder.classList.add("show");
+  cards.forEach((card) => {
+    card.addEventListener("click", () => handleCardAction(card));
+    card.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        handleCardAction(card);
+      }
+    });
   });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   initExperienceCards();
-  initCloseButton();
 });
