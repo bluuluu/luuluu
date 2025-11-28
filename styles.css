@@ -17,6 +17,9 @@
     background-color: #2e7d32;
     padding: 0 30px;
     height: 65px;
+    position: sticky;
+    top: 0;
+    z-index: 30;
   }
   
   .nav-links {
@@ -26,7 +29,7 @@
     flex: 1;
   }
   
-  .navbar a {
+.navbar a {
     color: white;
     text-decoration: none;
     font-size: 22px;
@@ -36,11 +39,25 @@
     align-items: center;
   }
   
-  .icon {
+.icon {
     height: 60px;
     width: auto;
     cursor: pointer;
     display: block;
+  }
+
+  .nav-links a.active {
+    position: relative;
+  }
+
+  .nav-links a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    height: 2px;
+    background: linear-gradient(90deg, #1b5e20, #66bb6a);
   }
   
   
@@ -213,6 +230,258 @@
     transform: translateY(1px);
   }
 
+  /* About page */
+.hero.about-hero {
+    align-items: flex-start;
+    padding: 60px 24px;
+    min-height: 100vh;
+    height: auto;
+    overflow: hidden;
+    background: none;
+  }
+
+  .hero.about-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("pictures/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .hero-content.about {
+    max-width: 1200px;
+    width: 100%;
+    text-align: left;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(27, 94, 32, 0.35));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+    position: relative;
+    z-index: 1;
+  }
+
+  .about-lede h1 {
+    font-size: 52px;
+    letter-spacing: 6px;
+    margin-bottom: 12px;
+  }
+
+  .eyebrow {
+    letter-spacing: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 6px;
+  }
+
+  .lede-text {
+    max-width: 640px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .experience-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 24px;
+    margin-top: 36px;
+  }
+
+  .stacked-section {
+    display: grid;
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .section-header h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+
+  .info-grid {
+    display: grid;
+    gap: 12px;
+  }
+
+  .info-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 16px 18px;
+    color: white;
+  }
+
+  .info-card.subtle {
+    border-style: dashed;
+    color: rgba(255, 255, 255, 0.82);
+  }
+
+  .experience-list {
+    display: grid;
+    gap: 12px;
+  }
+
+  .experience-card {
+    width: 100%;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 16px 18px;
+    color: white;
+    cursor: pointer;
+    transition: border 0.2s ease, transform 0.2s ease, background 0.3s ease;
+  }
+
+  .experience-card:hover:not(.disabled) {
+    border-color: #66bb6a;
+    transform: translateY(-2px);
+  }
+
+  .experience-card.active {
+    background: linear-gradient(120deg, rgba(46, 125, 50, 0.25), rgba(255, 255, 255, 0.04));
+    border-color: #66bb6a;
+  }
+
+  .experience-card.disabled {
+    cursor: default;
+    opacity: 0.5;
+  }
+
+  .card-main {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .company {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    margin-top: 2px;
+  }
+
+  .experience-logo,
+  .detail-logo {
+    height: 52px;
+    width: auto;
+    object-fit: contain;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 8px 12px;
+  }
+
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .pill-ghost {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+.experience-detail {
+    background-color: rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 20px;
+    display: grid;
+    gap: 18px;
+  }
+
+  .experience-detail.collapsed {
+    display: none;
+  }
+
+  .experience-placeholder {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.75);
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    padding: 18px;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+
+  .experience-placeholder.show {
+    display: flex;
+  }
+
+  .detail-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .impact-list {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+  }
+
+  .impact-list li {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 12px 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.88);
+  }
+
+  .toolkit {
+    display: grid;
+    gap: 10px;
+  }
+
+  .tool-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .tool-pills .pill {
+    background: rgba(46, 125, 50, 0.15);
+    border: 1px solid rgba(46, 125, 50, 0.5);
+    color: #d8f3dc;
+  }
+
+  .tool-images {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .tool-images img {
+    height: 42px;
+    width: auto;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    padding: 6px 10px;
+  }
+
+  .close-detail {
+    margin-left: auto;
+  }
+
   @media (min-width: 900px) {
     .hero-content.contact {
       text-align: left;
@@ -221,5 +490,29 @@
     .contact-grid {
       grid-template-columns: 1fr 1.1fr;
       gap: 32px;
+    }
+
+    .hero.about-hero {
+      padding: 80px 40px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .about-lede h1 {
+      font-size: 38px;
+      letter-spacing: 4px;
+    }
+
+    .experience-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .detail-meta {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .info-card {
+      flex-direction: column;
     }
   }

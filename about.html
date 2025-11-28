@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Bryan Luu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">
+      <img src="pictures/sheeps.png" alt="Duck Logo" class="icon clickable" />
+    </a>
+    <div class="nav-links">
+      <a href="index.html">HOME</a>
+      <a href="about.html" class="active">ABOUT</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+    <a href="https://www.linkedin.com/in/bryanqluu" target="_blank">
+      <img src="pictures/linkedin.png" alt="LinkedIn" class="icon clickable" />
+    </a>
+  </nav>
+
+  <section class="hero about-hero">
+    <div class="hero-content about">
+      <div class="about-lede">
+        <p class="eyebrow">ABOUT</p>
+        <h1>Quality-first builder</h1>
+        <p class="lede-text">
+          A concise hub that summarizes my experiences. Tap an experience to see what I shipped, how I worked, and the tools I used.
+        </p>
+      </div>
+
+      <div class="stacked-section">
+        <div class="section-header">
+          <p class="eyebrow">Education</p>
+          <h2>Building foundations</h2>
+        </div>
+        <div class="info-grid">
+          <div class="info-card">
+            <div>
+              <p class="eyebrow">Degree</p>
+              <h3>Bachelor of Applied Science, Software Engineering (Co-op)</h3>
+              <p class="company">University of Ottawa, Canada — GPA: 3.7/4.0</p>
+            </div>
+            <p class="pill pill-ghost">Sep 2022 – Present</p>
+          </div>
+          <div class="info-card subtle">
+            <p class="eyebrow">Notes</p>
+            <p class="company">
+              Add key courses, design studio projects, or scholarships you want to highlight.
+            </p>
+          </div>
+        </div>
+      </div>
+
+        <div class="stacked-section">
+          <div class="section-header">
+            <p class="eyebrow">Experience</p>
+            <h2>Experience highlights</h2>
+          </div>
+          <div class="experience-grid">
+            <div class="experience-list">
+              <button class="experience-card" data-experience="bell">
+                <div class="card-main">
+                  <img src="pictures/bell.png" alt="Bell Canada" class="experience-logo" />
+                  <div>
+                    <p class="eyebrow">Sep 2024 - Aug 2025</p>
+                    <h3>Software Quality Assurance Specialist (Co-op)</h3>
+                <p class="company">Bell Canada — Fibe TV Quality</p>
+              </div>
+            </div>
+            <span class="pill pill-ghost">Open</span>
+          </button>
+          <div class="experience-card disabled">
+            <div class="card-main">
+              <div>
+                <p class="eyebrow">More coming soon</p>
+                <h3>Additional journeys</h3>
+                <p class="company">Let’s build the next story together.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-detail collapsed" id="experience-detail">
+          <div class="detail-meta">
+            <div>
+              <p class="eyebrow" data-detail="dates">Sep 2024 - Aug 2025</p>
+              <h3 data-detail="title">Software Quality Assurance Specialist (Co-op)</h3>
+              <p class="company" data-detail="company">Bell Canada — Fibe TV Quality Department</p>
+            </div>
+            <button class="pill pill-ghost close-detail" type="button">Hide</button>
+            <img src="pictures/bell.png" alt="Bell Canada" class="detail-logo" data-detail="logo" />
+          </div>
+
+          <ul class="impact-list" data-detail="bullets"></ul>
+
+          <div class="toolkit">
+            <p class="eyebrow">Tools & Focus</p>
+            <div class="tool-pills" data-detail="tools"></div>
+          </div>
+        </div>
+        <div class="experience-placeholder show" id="experience-placeholder">
+          Select an experience to view details.
+        </div>
+      </div>
+
+      <div class="stacked-section">
+        <div class="section-header">
+          <p class="eyebrow">Extra Curricular</p>
+          <h2>Community & creativity</h2>
+        </div>
+        <div class="info-grid">
+          <div class="info-card">
+            <div>
+              <p class="eyebrow">Clubs / Volunteering</p>
+              <h3>Add your role</h3>
+              <p class="company">Organization — What you contributed</p>
+            </div>
+            <p class="pill pill-ghost">Add timeline</p>
+          </div>
+          <div class="info-card subtle">
+            <p class="eyebrow">Highlights</p>
+            <p class="company">
+              Mention events hosted, design/tech competitions, hackathons, or mentoring you have done.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
