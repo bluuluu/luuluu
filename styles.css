@@ -320,6 +320,82 @@
     color: white;
   }
 
+  .club-card {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .club-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .club-logo {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 8px 10px;
+  }
+
+  .role-list {
+    display: grid;
+    gap: 12px;
+    width: 100%;
+    position: relative;
+    padding-left: 18px;
+  }
+
+  .role-list::before {
+    content: "";
+    position: absolute;
+    left: 11px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: linear-gradient(180deg, rgba(102, 187, 106, 0.9), rgba(255, 255, 255, 0));
+  }
+
+  .role-entry {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 14px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    position: relative;
+  }
+
+  .role-entry::before {
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: 18px;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    border: 2px solid #66bb6a;
+    background: #0b0b0b;
+    box-shadow: 0 0 0 4px rgba(102, 187, 106, 0.12);
+  }
+
+  .role-entry h4 {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  .role-entry .pill {
+    align-self: flex-start;
+  }
+
+  .highlights-card .company {
+    max-width: 780px;
+  }
+
   .edu-logo {
     height: 48px;
     width: auto;
@@ -561,6 +637,24 @@
     }
 
     .info-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .role-list {
+      padding-left: 14px;
+    }
+
+    .role-list::before {
+      left: 8px;
+    }
+
+    .role-entry::before {
+      left: -10px;
+    }
+
+    .club-header,
+    .role-entry {
       flex-direction: column;
       align-items: flex-start;
     }
