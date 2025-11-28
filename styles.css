@@ -320,6 +320,31 @@
     color: white;
   }
 
+  .edu-logo {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+    align-self: center;
+  }
+
+  .edu-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 16px;
+    justify-content: start;
+  }
+
+  .edu-details {
+    display: grid;
+    gap: 6px;
+    align-items: start;
+  }
+
+  .edu-dates {
+    justify-self: start;
+  }
+
   .info-card.subtle {
     border-style: dashed;
     color: rgba(255, 255, 255, 0.82);
@@ -537,5 +562,14 @@
 
     .info-card {
       flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .edu-logo {
+      margin-top: 6px;
+    }
+
+    .edu-card {
+      grid-template-columns: 1fr;
     }
   }
