@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Bryan Luu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">
+      <img src="pictures/sheeps.png" alt="Duck Logo" class="icon clickable" />
+    </a>
+    <div class="nav-links">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="projects.html" class="active">PROJECTS</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+    <a href="https://www.linkedin.com/in/bryanqluu" target="_blank">
+      <img src="pictures/linkedin.png" alt="LinkedIn" class="icon clickable" />
+    </a>
+  </nav>
+
+  <section class="hero projects-hero">
+    <div class="hero-content projects">
+      <div class="projects-header">
+        <p class="eyebrow">Projects</p>
+        <h1>What I'm Building</h1>
+        <p class="lede-text">
+          A mix of software builds, analytics deep dives, and media work. Each project highlights the impact, the process, and the tools that made it happen.
+        </p>
+      </div>
+
+      <div class="projects-sections">
+        <div class="project-section">
+          <div class="section-header">
+            <p class="eyebrow">Software Related Projects</p>
+            <h2>Product engineering & automation</h2>
+            <p class="section-intro">Brief overviews, the core wins, and the stack—each tool is shown with its logo so you can see what powered the build.</p>
+          </div>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-head">
+                <div>
+                  <p class="eyebrow">Web Platform</p>
+                  <h3>GreenTrail Journal</h3>
+                </div>
+                <span class="pill pill-ghost">Completed</span>
+              </div>
+              <p class="project-description">
+                A responsive hiking journal that lets friends log trips, attach photos, and share trail conditions in real time.
+              </p>
+              <ul class="project-points">
+                <li>Built a lightweight SPA with client-side routing to keep the experience fast on spotty connections.</li>
+                <li>Implemented local caching for offline notes that sync once connectivity returns.</li>
+                <li>Added map embeds and elevation charts so each entry has context and visuals.</li>
+              </ul>
+              <div class="tool-stack">
+                <p class="eyebrow">Tools</p>
+                <div class="tool-list">
+                  <div class="tool-pill">
+                    <div class="tool-icon">
+                      <img src="pictures/HTML5_logo_and_wordmark.svg.png" alt="HTML5" />
+                    </div>
+                    <span>HTML5</span>
+                  </div>
+                  <div class="tool-pill">
+                    <div class="tool-icon">
+                      <img src="pictures/CSS3_logo_and_wordmark.svg.png" alt="CSS3" />
+                    </div>
+                    <span>CSS3</span>
+                  </div>
+                  <div class="tool-pill">
+                    <div class="tool-icon">
+                      <img src="pictures/Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript" />
+                    </div>
+                    <span>JavaScript</span>
+                  </div>
+                  <div class="tool-pill">
+                    <div class="tool-icon generated">API</div>
+                    <span>Leaflet map embeds</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-links">
+                <a class="project-link" href="https://github.com/placeholder/greentrail-journal" target="_blank" rel="noreferrer">View on GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-head">
+                <div>
+                  <p class="eyebrow">Automation</p>
+                  <h3>Release Flow Assistant</h3>
+                </div>
+                <span class="pill pill-ghost">In Progress</span>
+              </div>
+              <p class="project-description">
+                Scripted deployment helper that linted, tested, and packaged small web services with one command to cut context switching.
+              </p>
+              <ul class="project-points">
+                <li>Orchestrated pre-release checks (lint, unit tests, bundle size) with a unified status output.</li>
+                <li>Added rollback hooks and changelog generation so teammates could ship safely.</li>
+                <li>Packaged results into sharable reports for quick code reviews.</li>
+              </ul>
+              <div class="tool-stack">
+                <p class="eyebrow">Tools</p>
+                <div class="tool-list">
+                  <div class="tool-pill">
+                    <div class="tool-icon generated">CI</div>
+                    <span>GitLab CI</span>
+                  </div>
+                  <div class="tool-pill">
+                    <div class="tool-icon">
+                      <img src="pictures/Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript" />
+                    </div>
+                    <span>Node Scripts</span>
+                  </div>
+                  <div class="tool-pill">
+                    <div class="tool-icon generated">QA</div>
+                    <span>Maestro automation</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-links">
+                <a class="project-link" href="https://github.com/placeholder/release-flow-assistant" target="_blank" rel="noreferrer">View on GitHub</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <div class="section-header">
+            <p class="eyebrow">Data Science / Analytics Projects</p>
+            <h2>Insights & dashboards</h2>
+            <p class="section-intro">Each project pairs a quick summary, measurable wins, and the analytics toolkit (with visuals) used to ship it.</p>
+          </div>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-head">
+                <div>
+                  <p class="eyebrow">Dashboard</p>
+                  <h3>Telecom KPI Command Center</h3>
+                </div>
+                <span class="pill pill-ghost">Completed</span>
+              </div>
+              <p class="project-description">
+                An executive-ready dashboard for telecom ops leaders that surfaced network health, ticket velocity, and outage hotspots.
+              </p>
+              <ul class="project-points">
+                <li>Modeled KPIs with DAX and built drill-through views for regional and device-level insights.</li>
+                <li>Automated refresh pipelines so reports stayed current without manual exports.</li>
+                <li>Packaged findings into a one-page briefing that accelerated weekly decision meetings.</li>
+              </ul>
+              <div class="tool-stack">
+                <p class="eyebrow">Tools</p>
+                <div class="tool-list">
+                  <div class="tool-pill">
+                    <div class="tool-icon generated">BI</div>
+                    <span>Power BI + DAX</span>
+                  </div>
+                  <div class="tool-pill">
+                    <div class="tool-icon generated">AZ</div>
+                    <span>Azure Pipelines</span>
+                  </div>
+                  <div class="tool-pill">
+                    <div class="tool-icon generated">SQL</div>
+                    <span>SQL Views</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-links">
+                <a class="project-link" href="https://github.com/placeholder/telecom-kpi-dashboard" target="_blank" rel="noreferrer">View on GitHub</a>
+                <a class="project-link ghost" href="https://example.com/telecom-report" target="_blank" rel="noreferrer">Read the report</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-head">
+                <div>
+                  <p class="eyebrow">Analytics</p>
+                  <h3>Campus Energy Insights</h3>
+                </div>
+                <span class="pill pill-ghost">Prototype</span>
+              </div>
+              <p class="project-description">
+                Modeled student housing energy usage to spot waste, benchmark residence halls, and recommend targeted efficiency tweaks.
+              </p>
+              <ul class="project-points">
+                <li>Cleaned and normalized smart-meter data, then built seasonal baselines to flag anomalies.</li>
+                <li>Visualized savings scenarios and compared occupancy-adjusted consumption.</li>
+                <li>Shared recommendations with facilities teams to prioritize no-regret changes.</li>
+              </ul>
+              <div class="tool-stack">
+                <p class="eyebrow">Tools</p>
+                <div class="tool-list">
+                  <div class="tool-pill">
+                    <div class="tool-icon generated">Py</div>
+                    <span>Python + Pandas</span>
+                  </div>
+                  <div class="tool-pill">
+                    <div class="tool-icon generated">NB</div>
+                    <span>Jupyter</span>
+                  </div>
+                  <div class="tool-pill">
+                    <div class="tool-icon generated">Viz</div>
+                    <span>Matplotlib</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-links">
+                <a class="project-link" href="https://github.com/placeholder/campus-energy-insights" target="_blank" rel="noreferrer">View on GitHub</a>
+                <a class="project-link ghost" href="https://example.com/energy-report" target="_blank" rel="noreferrer">Read the report</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <div class="section-header">
+            <p class="eyebrow">Media Related Projects</p>
+            <h2>Posts, promos, and visuals</h2>
+            <p class="section-intro">Preview the posts themselves and jump out to the live links.</p>
+          </div>
+          <div class="media-grid">
+            <article class="media-card">
+              <div class="media-preview">
+                <span class="pill pill-ghost">Reel</span>
+                <h3>Campus Culture Night Highlights</h3>
+                <p class="company">Cut-down reel featuring the best moments with motion graphics overlays.</p>
+              </div>
+              <div class="media-footer">
+                <div>
+                  <p class="eyebrow">Link</p>
+                  <a href="https://example.com/reel" target="_blank" rel="noreferrer">Watch the post</a>
+                </div>
+                <span class="pill">Video</span>
+              </div>
+            </article>
+
+            <article class="media-card">
+              <div class="media-preview">
+                <span class="pill pill-ghost">Carousel</span>
+                <h3>Event Poster Series</h3>
+                <p class="company">Typography-forward promos for a club series, tuned for Instagram and print.</p>
+              </div>
+              <div class="media-footer">
+                <div>
+                  <p class="eyebrow">Link</p>
+                  <a href="https://example.com/posters" target="_blank" rel="noreferrer">View the gallery</a>
+                </div>
+                <span class="pill">Design</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
