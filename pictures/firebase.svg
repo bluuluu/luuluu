@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Firebase logo">
+  <defs>
+    <linearGradient id="fbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fcca3f"/>
+      <stop offset="100%" stop-color="#f58220"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="url(#fbg)"/>
+  <path fill="#fff2d5" d="M24 44 16 26l6-10 2 6z"/>
+  <path fill="#ffe082" d="M24 44 38 14l5 12 1 14z"/>
+  <path fill="#f57c00" d="M24 44 44 40l-2-12z"/>
+</svg>
