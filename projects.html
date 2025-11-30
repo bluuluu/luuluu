@@ -149,6 +149,48 @@
             <article class="project-card">
               <div class="project-head">
                 <div>
+                  <p class="eyebrow">Analytics</p>
+                  <h3>VCT 2024 Analysis</h3>
+                </div>
+                <span class="pill pill-ghost">Work in progress</span>
+              </div>
+              <p class="eyebrow">Dec 2024 – Present</p>
+              <p class="project-description">
+                Valorant event analysis pipeline that pulls raw match data from VLR, shapes it into agent- and match-level CSVs, and surfaces composition and regional insights (full report coming soon).
+              </p>
+              <ul class="project-points">
+                <li>Pulls VLR events via vlrdevapi (e.g., Champions 2024) and turns them into agent- and match-level datasets so raw pages become structured rows you can analyze.</li>
+                <li>Builds per-team composition summaries for every match and map, then highlights the most common comps to spot meta trends quickly.</li>
+                <li>Rolls up region-by-region stats showing which agents and compositions get picked and how often they win, making it easy to compare regions at a glance.</li>
+              </ul>
+              <div class="tool-stack">
+                <p class="eyebrow">Tools</p>
+                <div class="tool-list">
+                  <div class="tool-pill">
+                    <div class="tool-icon generated">Py</div>
+                    <span>Python</span>
+                  </div>
+                  <div class="tool-pill">
+                    <div class="tool-icon generated">pd</div>
+                    <span>Pandas</span>
+                  </div>
+                  <div class="tool-pill">
+                    <div class="tool-icon generated">API</div>
+                    <span>vlrdevapi</span>
+                  </div>
+                  <div class="tool-pill">
+                    <div class="tool-icon generated">DB</div>
+                    <span>SQLite</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-links">
+                <a class="project-link" href="https://github.com/bluuluu/VCT2024-Analysis" target="_blank" rel="noreferrer">View on GitHub</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-head">
+                <div>
                   <p class="eyebrow">Dashboard</p>
                   <h3>Telecom KPI Command Center</h3>
                 </div>
