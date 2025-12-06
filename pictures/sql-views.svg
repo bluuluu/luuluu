@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SQL Views Logo">
+  <rect x="6" y="10" width="52" height="44" rx="10" fill="#2e7d32"/>
+  <ellipse cx="32" cy="18" rx="16" ry="6" fill="#e8f5e9"/>
+  <path d="M16 18v20c0 3 7 6 16 6s16-3 16-6V18" fill="none" stroke="#e8f5e9" stroke-width="4"/>
+  <circle cx="32" cy="34" r="8" fill="#c8e6c9" stroke="#1b5e20" stroke-width="2"/>
+  <path d="M36 34a4 4 0 1 1-8 0 4 4 0 0 1 8 0z" fill="#2e7d32"/>
+</svg>

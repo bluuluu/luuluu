@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="scikit-learn Logo">
+  <defs>
+    <linearGradient id="sk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb74d"/>
+      <stop offset="100%" stop-color="#f57c00"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="url(#sk)"/>
+  <text x="32" y="36" font-family="Arial, sans-serif" font-weight="700" font-size="16" text-anchor="middle" fill="#fff">sk</text>
+  <path d="M18 38c3 4 8 7 14 7 7 0 13-3 16-8" stroke="#ffe0b2" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>
