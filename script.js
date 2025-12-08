@@ -34,7 +34,7 @@ const experienceData = {
     title: "Junior Programmer (Co-op)",
     company: "Immigration, Refugees and Citizenship Canada — IM, Data & Cyber Security",
     dates: "Jan 2024 - Aug 2024",
-    logo: "pictures/ircc.svg",
+    logo: "pictures/ircc.jpg",
     bullets: [
       "Developed Oracle BI and SQL dashboards for cybersecurity and data-quality monitoring, speeding incident triage and decisions.",
       "Designed and implemented IBM Netezza ETL pipelines for large-scale analytics to improve data accessibility and reporting reliability.",
