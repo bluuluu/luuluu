@@ -30,6 +30,27 @@ const experienceData = {
       "Quality reporting"
     ]
   },
+  ircc: {
+    title: "Junior Programmer (Co-op)",
+    company: "Immigration, Refugees and Citizenship Canada — IM, Data & Cyber Security",
+    dates: "Jan 2024 - Aug 2024",
+    logo: "pictures/ircc.svg",
+    bullets: [
+      "Developed Oracle BI and SQL dashboards for cybersecurity and data-quality monitoring, speeding incident triage and decisions.",
+      "Designed and implemented IBM Netezza ETL pipelines for large-scale analytics to improve data accessibility and reporting reliability.",
+      "Built monitoring scripts to track report usage with ~80% accuracy, informing retirement of low-value assets.",
+      "Optimized MySQL queries to reduce report load times by 30%, improving user experience.",
+      "Translated analytical findings into recommendations for data and cybersecurity stakeholders to support policy enhancements."
+    ],
+    tools: [
+      "Oracle BI",
+      "SQL (MySQL, Netezza)",
+      "ETL pipelines",
+      "Usage monitoring scripts",
+      "Performance tuning",
+      "Cyber/data analytics"
+    ]
+  },
   ssc: {
     title: "Junior Business and IT Analyst (Co-op)",
     company: "Shared Services Canada — Telecommunications",
