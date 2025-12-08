@@ -814,6 +814,25 @@
     min-height: 220px;
   }
 
+  .media-thumb {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 12px;
+    background: linear-gradient(140deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.2)), var(--thumb);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    display: block;
+    transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease;
+  }
+
+  .media-thumb:hover {
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
   .media-preview {
     padding: 16px;
     background: radial-gradient(circle at 20% 20%, rgba(102, 187, 106, 0.25), rgba(0, 0, 0, 0.85));
