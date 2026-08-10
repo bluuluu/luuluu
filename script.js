@@ -8,6 +8,28 @@ function aboutMe() {
 
 // Experience detail interaction for About page
 const experienceData = {
+  boc: {
+    title: "Data API & Cloud Platform Engineering Intern - QA Automation Engineer",
+    company: "Bank of Canada - Technology & Operations",
+    dates: "May 2026 - Present",
+    logo: "pictures/bank-of-canada.jpg",
+    bullets: [
+      "Develop and validate Java Spring and SQL REST APIs that process 50,000+ daily transaction records across regulated banking workflows.",
+      "Troubleshoot distributed, event-driven services using Kafka events, failed messages, SQL results, application logs, and Dynatrace telemetry.",
+      "Support cloud-native releases across Azure, Red Hat OpenShift, Kubernetes, Kafka, and Data Grid with GitHub Actions CI/CD and automated validation.",
+      "Document requirements, technical decisions, integrations, test evidence, risks, and operational workflows in Confluence, GitHub Wiki, and Jira."
+    ],
+    tools: [
+      "Java Spring",
+      "SQL REST APIs",
+      "Kafka",
+      "Azure",
+      "OpenShift + Kubernetes",
+      "GitHub Actions",
+      "Dynatrace",
+      "Jira + Confluence"
+    ]
+  },
   bell: {
     title: "Software Quality Assurance Specialist (Co-op)",
     company: "Bell Canada — Fibe TV Quality Department",

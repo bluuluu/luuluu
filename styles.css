@@ -762,6 +762,11 @@
     display: block;
   }
 
+  .tool-icon.logo-surface {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 7px;
+  }
+
   .tool-icon.generated {
     background: linear-gradient(140deg, rgba(102, 187, 106, 0.25), rgba(46, 125, 50, 0.6));
     color: #f0fff4;
